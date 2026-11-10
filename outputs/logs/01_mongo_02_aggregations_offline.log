@@ -1,0 +1,51 @@
+categories           25 docs
+products            500 docs
+transactions     10,000 docs
+users             1,000 docs
+
+=== mongo_revenue_by_category_month (100 rows) ===
+ units category_id   month                   category   revenue  est_profit
+   593     cat_018 2026-08               Phillips Inc 164612.12  44219.2629
+   671     cat_017 2026-08                Hancock Inc 156723.35  51100.9477
+   502     cat_021 2026-08               Mitchell-Kim 147281.21  34911.2795
+   554     cat_013 2026-08                  Smith Ltd 139568.06  37071.1016
+   465     cat_007 2026-08  Moore, Becker and Carlson 134265.37  39995.9368
+   564     cat_015 2026-08               Owens-Daniel 133587.80  33324.7732
+   525     cat_014 2026-08 Anderson, Walls and Duncan 131844.64  31126.0913
+   415     cat_005 2026-08            Cameron-Parsons 127486.88  38205.9535
+   432     cat_010 2026-08            Burns-Rodriguez 124833.27  23037.8912
+   392     cat_001 2026-08                Baldwin Ltd 118540.93  22651.6489
+
+=== mongo_top_products (20 rows) ===
+ units_sold  orders product_id  revenue                                       name                        category
+        106      51 prod_00454 55393.48        Multi-Channeled Composite Challenge                     Preston Ltd
+        102      49 prod_00256 54381.30              Visionary Needs-Based Support                     Hancock Inc
+        110      48 prod_00376 51438.20         Implemented 6Thgeneration Forecast                     Baldwin Ltd
+         90      41 prod_00245 50493.60          Right-Sized Actuating Utilization                 Cameron-Parsons
+         92      47 prod_00425 49921.04           Synergistic Tertiary Application Rodriguez, Figueroa and Sanchez
+         96      46 prod_00066 49559.04 Triple-Buffered Coherent Internet Solution      Patterson, Smith and Jones
+         84      45 prod_00147 48862.80            Reduced Client-Server Emulation      Brewer, Bryant and Hickman
+         94      48 prod_00074 48831.12       Configurable Disintermediate Success Rodriguez, Figueroa and Sanchez
+         94      43 prod_00027 46818.58               Phased Reciprocal Throughput                    Phillips Inc
+         94      40 prod_00415 45951.90                 Cloned Methodical Alliance                     Hancock Inc
+
+=== mongo_user_segments (5 rows) ===
+ users  segment_min_orders    avg_spent  total_spent  avg_sessions
+   131                   0  4430.253359    580363.19     37.870229
+   229                   6  6580.716769   1506984.14     38.751092
+   138                   8  8222.868696   1134755.88     38.442029
+   232                   9  9525.420259   2209897.50     40.353448
+   270                  11 13080.022333   3531606.03     42.585185
+
+=== mongo_revenue_state_payment (25 rows) ===
+ orders state payment_method  revenue
+     72    WI    credit_card 72121.43
+     65    WI         paypal 70485.81
+     52    NY         paypal 63703.47
+     57    UT         paypal 61913.47
+     54    NY    credit_card 61395.61
+     49    VT         paypal 57195.65
+     51    FL    credit_card 56646.58
+     49    WA         paypal 56487.85
+     51    FM         paypal 56082.65
+     52    VT    credit_card 55522.15

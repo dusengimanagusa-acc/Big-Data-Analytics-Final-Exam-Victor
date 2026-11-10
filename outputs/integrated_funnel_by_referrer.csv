@@ -1,0 +1,6 @@
+referrer,sessions,viewed_product,added_to_cart,reached_checkout,converted_flag_hbase,purchase_in_mongo,conv_pct
+direct,4032,3978,2642,1208,878,878,21.78
+email,4013,3963,2607,1203,839,839,20.91
+search_engine,3976,3932,2546,1104,762,762,19.16
+social,3995,3947,2589,1178,812,812,20.33
+affiliate,3984,3934,2573,1165,821,821,20.61

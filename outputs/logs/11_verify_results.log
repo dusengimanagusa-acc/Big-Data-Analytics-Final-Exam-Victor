@@ -1,0 +1,21 @@
+[PASS] MongoDB pipeline A: total item revenue   truth=9,196,372.68  system=9,196,372.68
+[PASS] Spark SQL q4 ROLLUP grand total (item revenue)   truth=9,196,372.68  system=9,196,372.68
+[PASS] Spark SQL q2 daily revenue summed (order totals)   truth=8,963,606.74  system=8,963,606.74
+[PASS] MongoDB pipeline B: top product id   truth=prod_00454  system=prod_00454
+[PASS] MongoDB pipeline B: top product revenue   truth=55,393.48  system=55,393.48
+[PASS] MongoDB pipeline C: users across all segments   truth=1,000.00  system=1,000.00
+[PASS] Integrated funnel stage 'sessions'   truth=20,000.00  system=20,000.00
+[PASS] Integrated funnel stage 'viewed_product'   truth=19,754.00  system=19,754.00
+[PASS] Integrated funnel stage 'added_to_cart'   truth=12,957.00  system=12,957.00
+[PASS] Integrated funnel stage 'reached_checkout'   truth=5,858.00  system=5,858.00
+[PASS] Integrated funnel stage 'converted_flag_hbase'   truth=4,112.00  system=4,112.00
+[PASS] Integrated funnel stage 'purchase_in_mongo'   truth=4,112.00  system=4,112.00
+[PASS] CLV (12 months) of user_000855   truth=7,704.67  system=7,704.67
+[PASS] CLV (12 months) of user_000717   truth=4,389.00  system=4,389.00
+[PASS] CLV (12 months) of user_000190   truth=2,793.70  system=2,793.70
+[PASS] CLV (12 months) of user_000029   truth=3,060.70  system=3,060.70
+[PASS] CLV (12 months) of user_000346   truth=3,283.57  system=3,283.57
+[PASS] Spark cohort table (28 cells)   max |truth - system| = 0.0000
+[PASS] Spark bought-together: baskets containing prod_00037 + prod_00205   truth=4.00  system=4.00
+
+SUMMARY: 19 passed, 0 failed, 0 skipped

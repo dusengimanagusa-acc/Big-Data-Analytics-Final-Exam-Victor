@@ -1,0 +1,14 @@
+# Minimum versions (the project was developed and tested with the exact versions in requirements-tested.txt)
+# Java 17 or 21 is also required by PySpark 4 (not a pip package).
+faker>=24
+pandas>=2.0
+numpy>=1.26
+pymongo>=4.6
+happybase>=1.2
+pyspark>=4.0,<5
+pyarrow>=14
+matplotlib>=3.8
+seaborn>=0.13
+reportlab>=4.0
+pillow>=10
+mongomock>=4.1

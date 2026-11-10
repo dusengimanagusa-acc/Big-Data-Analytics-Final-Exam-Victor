@@ -1,0 +1,4 @@
+device_type,sessions,viewed_product,added_to_cart,reached_checkout,converted,conv_pct
+tablet,13406,13210,8631,3930,2767,20.64
+mobile,13333,13166,8701,3933,2746,20.6
+desktop,13261,13112,8620,3883,2706,20.41

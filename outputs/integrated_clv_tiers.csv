@@ -1,0 +1,5 @@
+tier,users,avg_clv_12m,total_clv_12m,avg_orders,avg_sessions,avg_session_sec
+Platinum,250,8248.18,2062044.0,12.1,21.3,1809.0
+Gold,250,5568.28,1392070.0,9.4,20.2,1786.0
+Silver,250,4165.81,1041453.0,7.9,19.4,1843.0
+Bronze,250,2543.49,635872.0,5.8,19.1,1818.0

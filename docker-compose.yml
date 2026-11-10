@@ -1,0 +1,17 @@
+# docker compose up -d
+# MongoDB on :27017 ; HBase (master UI :16010, Thrift :9090 used by happybase)
+services:
+  mongo:
+    image: mongo:7
+    container_name: mongo
+    ports: ["27017:27017"]
+    volumes: ["mongo_data:/data/db"]
+  hbase:
+    image: harisekhon/hbase:latest      # standalone HBase incl. Thrift server
+    container_name: hbase
+    hostname: hbase
+    ports: ["2181:2181", "16010:16010", "9090:9090", "9095:9095", "16000:16000", "16020:16020", "16030:16030"]
+    volumes: ["hbase_data:/hbase-data"]
+volumes:
+  mongo_data:
+  hbase_data:

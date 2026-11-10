@@ -1,0 +1,9 @@
+loaded data/sessions_0.json: total sessions 10,000
+product_metrics rows written: 23,781
+user_000000 latest 3:
+  user_000000#8207072058632 2026-10-25T11:32:21.367858 browsed
+  user_000000#8208154079734 2026-10-12T22:58:40.265925 browsed
+  user_000000#8208226918102 2026-10-12T02:44:41.897403 abandoned
+newest-first ordering OK over 8 sessions
+range scan OK: 8
+[('prod_00000#20260810', {'m:views': '2', 'm:view_seconds': '158'}), ('prod_00000#20260812', {'m:views': '4', 'm:view_seconds': '663', 'm:cart_adds': '2', 'm:cart_units': '5', 'm:purchase_sessions': '2', 'm:purchased_units': '5'})]

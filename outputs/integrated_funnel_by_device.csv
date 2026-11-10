@@ -1,0 +1,4 @@
+device_type,sessions,viewed_product,added_to_cart,reached_checkout,converted_flag_hbase,purchase_in_mongo,conv_pct
+mobile,6677,6593,4363,1947,1350,1350,20.22
+tablet,6745,6653,4330,1990,1408,1408,20.87
+desktop,6578,6508,4264,1921,1354,1354,20.58

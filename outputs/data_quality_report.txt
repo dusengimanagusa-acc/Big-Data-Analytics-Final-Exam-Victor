@@ -1,0 +1,13 @@
+users raw/clean: (1000, 1000)
+products raw/clean: (500, 500)
+sessions raw/clean: (40000, 40000)
+transactions raw/clean: (10000, 10000)
+txn items mismatch: 0
+txn total mismatch: 0
+txn not linked to a session: 4920
+txn with unknown user: 0
+txn session_id missing in sessions: 0
+txn items with unknown product: 0
+txn dated BEFORE the user's registration: 0
+sessions 'converted': 8219
+...converted but NO transaction (generator txn cap): 3139

@@ -1,0 +1,76 @@
+category_id,rk,product_id,name,revenue,units
+cat_000,1,prod_00425,Fundamental Solution-Oriented Toolset,49921.04,92
+cat_000,2,prod_00074,Stand-Alone Global Access,48831.12,94
+cat_000,3,prod_00164,Virtual Scalable Strategy,28149.45,83
+cat_001,1,prod_00376,Integrated Hybrid Structure,51438.2,110
+cat_001,2,prod_00107,Vision-Oriented Multi-State Implementation,41890.32,73
+cat_001,3,prod_00044,Front-Line Encompassing Groupware,38270.0,89
+cat_002,1,prod_00169,Enhanced Attitude-Oriented Pricing Structure,42528.9,85
+cat_002,2,prod_00016,Triple-Buffered Intermediate Ability,41255.95,89
+cat_002,3,prod_00411,Open-Architected Actuating Open System,31878.0,84
+cat_003,1,prod_00227,Optional Bandwidth-Monitored Utilization,29441.5,110
+cat_003,2,prod_00356,Synchronized Scalable Initiative,28444.85,67
+cat_003,3,prod_00216,Business-Focused Clear-Thinking Support,18289.44,104
+cat_004,1,prod_00202,Reverse-Engineered Value-Added Superstructure,27384.0,96
+cat_004,2,prod_00367,Horizontal System-Worthy Matrix,27096.3,102
+cat_004,3,prod_00321,Universal Solution-Oriented Groupware,22085.44,52
+cat_005,1,prod_00245,User-Friendly Multi-Tasking Data-Warehouse,50493.6,90
+cat_005,2,prod_00042,Vision-Oriented Multi-State Matrix,40723.65,99
+cat_005,3,prod_00295,Triple-Buffered Attitude-Oriented Function,36339.03,91
+cat_006,1,prod_00162,Automated Regional Architecture,39580.58,94
+cat_006,2,prod_00487,Adaptive Value-Added Data-Warehouse,34873.5,75
+cat_006,3,prod_00369,Cross-Group Systemic Functionalities,32936.25,75
+cat_007,1,prod_00137,Virtual Actuating Database,38701.26,78
+cat_007,2,prod_00119,Down-Sized Fault-Tolerant Policy,35779.26,69
+cat_007,3,prod_00173,Compatible Leadingedge Hardware,34286.47,83
+cat_008,1,prod_00339,Vision-Oriented Systemic Local Area Network,29164.05,95
+cat_008,2,prod_00440,Intuitive Mission-Critical Hardware,22169.9,89
+cat_008,3,prod_00139,Assimilated Responsive Portal,21598.04,86
+cat_009,1,prod_00154,Triple-Buffered Homogeneous Info-Mediaries,43967.1,74
+cat_009,2,prod_00355,Seamless Intermediate Focus Group,39070.11,89
+cat_009,3,prod_00232,Configurable Background Internet Solution,32428.35,81
+cat_010,1,prod_00172,Function-Based Static Access,40130.16,84
+cat_010,2,prod_00095,Ergonomic Didactic Support,39673.8,93
+cat_010,3,prod_00243,Adaptive Contextually-Based Circuit,34109.11,71
+cat_011,1,prod_00047,Operative Incremental Groupware,36297.45,105
+cat_011,2,prod_00280,Centralized Holistic Forecast,28898.25,75
+cat_011,3,prod_00228,Streamlined Zero Administration Neural-Net,28735.52,88
+cat_012,1,prod_00438,Face-To-Face Exuding Throughput,39044.86,86
+cat_012,2,prod_00354,Organized 6Thgeneration Superstructure,36738.72,93
+cat_012,3,prod_00478,Progressive Tertiary Hierarchy,35308.08,76
+cat_013,1,prod_00492,Multi-Tiered Local Implementation,39547.5,75
+cat_013,2,prod_00205,Front-Line High-Level Attitude,38584.66,97
+cat_013,3,prod_00353,Down-Sized System-Worthy Intranet,36661.93,83
+cat_014,1,prod_00323,Triple-Buffered Methodical Knowledge User,44626.81,103
+cat_014,2,prod_00178,Switchable Hybrid Focus Group,37138.64,77
+cat_014,3,prod_00273,Visionary Responsive Methodology,30465.24,59
+cat_015,1,prod_00357,Profound Value-Added Service-Desk,42292.1,95
+cat_015,2,prod_00252,Customizable Grid-Enabled Internet Solution,39364.89,87
+cat_015,3,prod_00195,Multi-Tiered Scalable Hub,38760.0,85
+cat_016,1,prod_00021,Reactive Clear-Thinking Core,34328.7,63
+cat_016,2,prod_00370,Triple-Buffered Asymmetric Neural-Net,32509.12,92
+cat_016,3,prod_00000,Synchronized Bi-Directional Help-Desk,27104.9,73
+cat_017,1,prod_00256,Extended Zero Administration Challenge,54381.3,102
+cat_017,2,prod_00415,Mandatory Next Generation Hierarchy,45951.9,94
+cat_017,3,prod_00352,Organized Real-Time Structure,39659.55,107
+cat_018,1,prod_00027,Profound Methodical Utilization,46818.58,94
+cat_018,2,prod_00390,Balanced Secondary Throughput,44046.0,100
+cat_018,3,prod_00253,Synergistic Systematic Parallelism,39811.28,73
+cat_019,1,prod_00281,Stand-Alone Background Pricing Structure,39308.03,79
+cat_019,2,prod_00284,Phased Motivating Collaboration,37411.32,71
+cat_019,3,prod_00090,Phased Neutral Moderator,32978.22,87
+cat_020,1,prod_00147,Profit-Focused Encompassing Ability,48862.8,84
+cat_020,2,prod_00422,Public-Key Mobile Strategy,42570.71,91
+cat_020,3,prod_00138,De-Engineered Executive Intranet,40591.98,83
+cat_021,1,prod_00157,Advanced Uniform Circuit,45292.2,114
+cat_021,2,prod_00472,Decentralized Scalable Frame,33519.42,81
+cat_021,3,prod_00455,User-Centric Uniform Alliance,32733.96,98
+cat_022,1,prod_00454,Streamlined Object-Oriented Emulation,55393.48,106
+cat_022,2,prod_00433,Realigned Fresh-Thinking Protocol,38516.94,98
+cat_022,3,prod_00037,Persistent Static Moderator,38160.53,89
+cat_023,1,prod_00306,Synergistic Uniform Encoding,44148.1,86
+cat_023,2,prod_00401,Future-Proofed Local Encryption,43698.0,75
+cat_023,3,prod_00331,Multi-Channeled Disintermediate Orchestration,38470.25,89
+cat_024,1,prod_00066,Function-Based Zero Administration Hub,49559.04,96
+cat_024,2,prod_00384,Monitored Multi-State Forecast,37943.64,81
+cat_024,3,prod_00141,Cross-Group Directional Budgetary Management,35955.96,97

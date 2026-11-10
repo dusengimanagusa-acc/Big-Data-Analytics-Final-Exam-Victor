@@ -1,0 +1,41 @@
+# ============================================================
+# PART 1.2 - HBase schema. Run with:  hbase shell hbase/01_create_schema.hbase
+# (Docker: docker exec -i hbase hbase shell < hbase/01_create_schema.hbase)
+# ============================================================
+
+# ---- Table 1: user_sessions -----------------------------------------------
+# Row key  : <user_id>#<reverse_ts>      reverse_ts = (9999999999999 - start_epoch_ms), 13 digits
+#            -> all sessions of one user are contiguous AND newest-first, so
+#               "last N sessions of user X" = one short prefix scan, no sort needed.
+# Families : meta  (session id, times, duration, referrer, conversion, device_*, geo_*)
+#            pv    (page views as sparse columns pv:000, pv:001 ... one cell per page view)
+#            cart  (cart:<product_id> = "qty|price"; only exists for sessions that used the cart)
+# NOTE: GZ is used because it works in the Docker image; use SNAPPY on a production cluster with native libs.
+# Few families (3) because each family = separate HFile set / memstore. VERSIONS=1 (events are immutable).
+# TTL = 90 days keeps the hot table bounded (older data would be archived to HDFS/Parquet for Spark).
+create 'user_sessions',
+  {NAME => 'meta', VERSIONS => 1, COMPRESSION => 'GZ', BLOOMFILTER => 'ROW'},
+  {NAME => 'pv',   VERSIONS => 1, COMPRESSION => 'GZ', TTL => 7776000},
+  {NAME => 'cart', VERSIONS => 1, COMPRESSION => 'GZ'},
+  {SPLITS => ['user_002000','user_004000','user_006000','user_008000']}
+
+# ---- Table 2: product_metrics ---------------------------------------------
+# Row key  : <product_id>#<yyyymmdd>  -> a product's daily history is contiguous (time-range scan)
+# Family m : views, view_seconds, cart_adds, cart_units, purchased_units, purchase_sessions
+create 'product_metrics',
+  {NAME => 'm', VERSIONS => 1, COMPRESSION => 'GZ'},
+  {SPLITS => ['prod_01000','prod_02000','prod_03000','prod_04000']}
+
+# ---- Sample shell queries ---------------------------------------------------
+# Latest 5 sessions of one user (prefix scan, newest first because of reverse timestamp):
+#   scan 'user_sessions', {STARTROW => 'user_000042#', STOPROW => 'user_000042$', LIMIT => 5}
+# Only a few columns (cheap - skips the 'pv' family entirely):
+#   scan 'user_sessions', {STARTROW => 'user_000042#', STOPROW => 'user_000042$', COLUMNS => ['meta:duration_seconds','meta:conversion_status']}
+# One product's daily metrics for a date range:
+#   scan 'product_metrics', {STARTROW => 'prod_00123#20260801', STOPROW => 'prod_00123#20260831', COLUMNS => ['m:views','m:cart_adds']}
+# Single row get:
+#   get 'product_metrics', 'prod_00123#20260815'
+# Count rows in a table:
+#   count 'user_sessions', INTERVAL => 100000
+
+exit
